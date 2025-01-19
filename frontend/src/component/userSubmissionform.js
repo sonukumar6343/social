@@ -35,7 +35,7 @@ const UserSubmissionForm = () => {
     }
 
     try {
-      const response = await fetch('http://localhost:4000/socialMedia/createUser', {
+      const response = await fetch('https://socialmedia-fbyd.onrender.com/socialMedia/createUser', {
         method: 'POST',
         body: data,
       });
