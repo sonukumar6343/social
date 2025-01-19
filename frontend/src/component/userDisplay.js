@@ -7,7 +7,7 @@ const UserDisplay = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:4000/socialMedia/getAllUser', {
+    fetch('https://socialmedia-fbyd.onrender.com/socialMedia/getAllUser', {
       method: 'GET',
       headers: {
         'Authorization': `Bearer ${localStorage.getItem('token')}`, // Ensure token is sent
